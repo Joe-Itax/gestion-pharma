@@ -1,11 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import 'remixicon/fonts/remixicon.css'
 import './index.css';
 import Layout from './components/layout/layout';
+import LayoutDashboard from './components/layout/layout-dashboard';
 // import App from './App.jsx';
 import Login from './pages/login';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from './pages/home';
+import Dashboard from './pages/dashboard';
 import SingleProduct from './pages/single-product';
 import About from './pages/about';
 import Products from './pages/products';
@@ -17,6 +20,16 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: <Login />,
+  },
+  {
+    path: '/',
+    element: <LayoutDashboard />,
+    children: [
+      {
+        path: '/dashboard',
+        element: <Dashboard />,
+      },
+    ],
   },
   {
     path: '/',

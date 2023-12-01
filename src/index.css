@@ -66,48 +66,7 @@ button:focus-visible {
   }
 }
 
-nav {
-  display: flex;
-  background-color: #21354777;
-  padding: 2rem;
-  width: 100%;
-  justify-content: end;
-}
 
-nav ul {
-  display: flex;
-}
-
-nav ul li {
-  list-style: none;
-}
-
-nav ul li a {
-  padding: 0.5rem 1rem;
-  font-weight: 500;
-  color: #fff;
-  text-decoration: inherit;
-}
-
-nav ul li a.deconnexion {
-  background-color: rgb(163, 76, 76);
-  border-radius: 5px;
-  margin-left: 5rem;
-}
-
-nav ul li a.deconnexion:hover {
-  color: initial;
-}
-
-nav ul li a:hover {
-  color: #747bff;
-}
-
-nav ul li a.active {
-  background-color: #7579c87e;
-  color: #fff;
-  border-radius: 5px;
-}
 
 .products-list {
   display: flex;

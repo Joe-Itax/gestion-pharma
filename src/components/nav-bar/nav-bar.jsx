@@ -1,6 +1,12 @@
 import { NavLink } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+// import "./nav-bar.css"
 
 function NavBar() {
+  const navigate = useNavigate();
+  const handleClick = () => {
+    navigate('/');
+  };
   return (
     <ul>
       <li>
@@ -13,9 +19,9 @@ function NavBar() {
         <NavLink to="/about">A Propos</NavLink>
       </li>
       <li>
-        <NavLink to="/" className="deconnexion">
+        <button className="deconnexion" onClick={handleClick}>
           Deconnexion
-        </NavLink>
+        </button>
       </li>
     </ul>
   );
