@@ -20,7 +20,7 @@ function Login() {
       <button onClick={handleClick}>Connexion</button>
 
       <br />
-      <label for="admin">Je suis Admin Admin</label>
+      <label htmlFor="admin">Je suis Admin</label>
       <input type='checkbox' id='admin' defaultChecked={change} onChange={handleChange}/>
     </>
   );

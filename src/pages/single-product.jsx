@@ -4,11 +4,12 @@ import ProductService from '../models/services/productService.js';
 import ProductPreview from '../components/product-preview/product-preview';
 
 function SingleProduct() {
-  const { id } = useParams();
+  // const { id } = useParams();slug
+  const { slug } = useParams();
 
   const data = ProductService.getProducts();
 
-  const product = data.find((product) => product.id === id);
+  const product = data.find((product) => product.slug === slug);
 
   return (
     <>

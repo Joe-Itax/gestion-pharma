@@ -1,4 +1,4 @@
-nav {
+nav.nav-bar {
   display: flex;
   background-color: #21354777;
   padding: 2rem;
@@ -7,37 +7,37 @@ nav {
   align-items: center;
 }
 
-nav ul {
+nav.nav-bar ul {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-nav ul li {
+nav.nav-bar ul li {
   list-style: none;
 }
 
-nav ul li a {
+nav.nav-bar ul li a {
   padding: 0.5rem 1rem;
   font-weight: 500;
   color: #fff;
   text-decoration: inherit;
 }
 
-nav ul li .deconnexion {
+nav.nav-bar ul li .deconnexion {
   border-radius: 5px;
   margin-left: 3rem;
 }
 
-nav ul li a.deconnexion:hover {
+nav.nav-bar ul li a.deconnexion:hover {
   color: initial;
 }
 
-nav ul li a:hover {
+nav.nav-bar ul li a:hover {
   color: #747bff;
 }
 
-nav ul li a.active {
+nav.nav-bar ul li a.active {
   background-color: #7579c87e;
   color: #fff;
   border-radius: 5px;

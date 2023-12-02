@@ -3,6 +3,7 @@ class ProductService {
     const products = [
       {
         id: '1',
+        slug: 'doliprane',
         name: 'Doliprane',
         image: 'https://dummyimage.com/200x200/000/fff&text=Doliprane',
         description:
@@ -10,6 +11,7 @@ class ProductService {
       },
       {
         id: '2',
+        slug: 'aspirine',
         name: 'Aspirine',
         image: 'https://dummyimage.com/200x200/000/fff&text=Aspirine',
         description:
@@ -17,6 +19,7 @@ class ProductService {
       },
       {
         id: '3',
+        slug: 'ibuprofene',
         name: 'Ibuprofène',
         image: 'https://dummyimage.com/200x200/000/fff&text=Ibuprofene',
         description:
