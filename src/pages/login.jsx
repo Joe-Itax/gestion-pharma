@@ -1,14 +1,13 @@
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 
-
 function Login() {
   const [change, setChange] = useState(false);
 
-  const handleChange = ()=>{
+  const handleChange = () => {
     setChange(true);
-  }
-  
+  };
+
   const navigate = useNavigate();
   const handleClick = () => {
     change ? navigate('/dashboard') : navigate('/home');
@@ -16,12 +15,19 @@ function Login() {
   return (
     <>
       <h1>Login Page</h1>
-
-      <button onClick={handleClick}>Connexion</button>
+      <form action="" method="post">
+        <input type="text" name="pseudo" id="pseudo" required />
+        <input onClick={handleClick} type="submit" value="Connexion" />
+      </form>
 
       <br />
       <label htmlFor="admin">Je suis Admin</label>
-      <input type='checkbox' id='admin' defaultChecked={change} onChange={handleChange}/>
+      <input
+        type="checkbox"
+        id="admin"
+        defaultChecked={change}
+        onChange={handleChange}
+      />
     </>
   );
 }
